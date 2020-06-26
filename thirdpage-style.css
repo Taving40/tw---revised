@@ -1,0 +1,161 @@
+* {
+	color: #00001a;
+}
+body {
+		background: darkgrey;
+	background-image: url("background - white.bmp");
+}
+header img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#menu_explanation p
+{
+	text-indent: 0em;
+}
+#meniu
+{
+	border:solid 0.2em gray;
+}
+h1
+{
+	text-align: center;
+	background-color: LightGray;
+	color:Black;
+	font-size: 3em;
+	border: solid 0.08em gray ;
+}
+h3
+{
+	font-size: 2em;
+	background-color:lightgrey;
+	border-top-style: hidden;
+	border-right-style: hidden;
+	border-bottom-style: hidden;
+	border-left-style: solid;
+	border-left-color: black; 
+	border-left-width: 0.25em;	
+}
+p {
+  font-family: "Times New Roman", Times, serif;
+  	font-size: 1.5em;
+	text-indent: 2em;
+}
+li {
+	font-size: 1.75em;
+}
+#fv > h4, #o > h4, #i > h4
+{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-right: 1.5em;
+  margin-left: 3em;
+  font-size: 3em;
+}
+div > h4
+{
+	font-size: 2em;
+	background:lightgray;
+	border-left:solid 0.2em;
+}
+a:link
+{
+	color: black;
+}
+figure
+{
+vertical-align: top;
+width: 25%;
+height: auto;
+display: inline-block;
+}
+ul
+{
+	list-style-type: none;
+}
+ul.M>li
+{
+	display: inline-block;
+	width: 30%;
+	height: 50%;
+	vertical-align:top;
+}
+ul.M>li ul
+{
+	display:none
+}
+ul.M>li:hover ul
+{
+	display:block;
+	background-image: url("background - black.bmp");
+	border-radius: 1em;
+}
+a[href*="page"]
+{
+	background-image: url("background - white.bmp");
+	border-radius: 1em;
+}
+ul.M>li:hover ul li
+{
+	font-size: 1em;
+}
+.poezie_text
+{
+	font-size: 1.3em;
+	border-left: solid 0.2em black;
+}
+.floaty
+{
+	float:right;
+	width: 30%;
+	height: auto;
+	max-width: 400px;
+	border: 1.75em solid transparent;
+	border-left-style: hidden;
+	border-right-style: hidden;
+	-ms-transform: rotate(10deg); /* IE 9 */
+	transform: rotate(10deg);
+	z-index:1;
+}
+@keyframes one{
+from   {transform: rotate(10deg);}
+to {transform: rotate(370deg);}
+}
+@keyframes two{
+0%   {transform: rotate(10deg);}
+25%  {transform: rotate(30deg);}
+75%  {transform: rotate(-20deg);}
+100% {transform: rotate(10deg);}
+}
+@keyframes three{
+0%   {height: 22em;}
+25%  {height: 15em;}
+50%  {height: 10em;}
+75%  {height: 15em;}
+100% {height: 22em;}
+}
+.img1
+{
+	border-image: url("banner 1.png") 30 stretch;
+	animation-name: one;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+}
+.img2
+{
+	border-image: url("banner 2.png") 30 stretch;
+	animation-name: two;
+	animation-duration: 1s;
+	animation-direction:reverse;
+	animation-timing-function: linear;
+}
+.img3
+{
+	border-image: url("banner 3.png") 30 stretch;
+	animation-name: three;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+}

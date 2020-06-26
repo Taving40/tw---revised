@@ -1,0 +1,142 @@
+* {
+	color: #00001a;
+}
+body {
+	background: darkgrey;
+	background-image: url("background - white.bmp");
+}
+header img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1
+{
+	text-align: center;
+	background-color: LightGray;
+	color:Black;
+	font-size: 3em;
+	border: solid 0.08em gray ;
+}
+h3
+{
+	font-size: 2em;
+	background-color:lightgrey;
+	border-top-style: hidden;
+	border-right-style: hidden;
+	border-bottom-style: hidden;
+	border-left-style: solid;
+	border-left-color: black; 
+	border-left-width: 0.25em;	
+}
+p {
+  font-family: "Times New Roman", Times, serif;
+  	font-size: 1.5em;
+	text-indent: 2em;
+}
+li {
+	font-size: 1.75em;
+}
+#menu_explanation p
+{
+	text-indent: 0em;
+}
+#meniu
+{
+	border:solid 0.2em gray;
+}
+a:link
+{
+	color: black;
+}
+figure
+{
+vertical-align: top;
+width: 25%;
+height: auto;
+display: inline-block;
+}
+ul
+{
+	list-style-type: none;
+}
+ul.M>li
+{
+	display: inline-block;
+	width: 30%;
+	height: 50%;
+	vertical-align:top;
+}
+
+ul.M>li ul
+{
+	display:none
+}
+ul.M>li:hover ul
+{
+	display:block;
+	background-image: url("background - black.bmp");
+	border-radius: 1em;
+}
+a[href*="page"]
+{
+	background-image: url("background - white.bmp");
+	border-radius: 1em;
+}
+ul.M>li:hover ul li
+{
+	font-size: 1em;
+}
+.iframe-container
+{
+	overflow: hidden;
+	padding-top: 56.25%;
+	position: relative;
+}
+.iframe-container > iframe {
+   border: solid 0.2em;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+figure.gallery{
+   width: 100%;
+  overflow:auto;
+  background-image: url("background - black.bmp");
+  padding:4em;
+}
+.gallery img
+{
+	float: left;
+	border:solid 1em;
+	border-image: url("background - white.bmp") 1 stretch;
+	width:30%;
+}
+.gallery figcaption
+{
+	color:white;
+	font-size: 2em;
+	text-align:right;
+	padding:8em;
+}
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 0.4em 0.45em;
+  text-align: center;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: green;
+}
+#buttonPadding{
+	padding-left: 2.5em;
+}
